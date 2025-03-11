@@ -225,7 +225,15 @@ Docker ([get docker](https://docs.docker.com/get-docker/)) and nvidia GPU driver
 The docker image can then either be pulled from [here](https://github.com/nerfstudio-project/nerfstudio/pkgs/container/nerfstudio) (`latest` can be replaced with a fixed version, e.g., `1.1.3`)
 
 ```bash
-docker pull ghcr.io/nerfstudio-project/nerfstudio:latest
+# runtime
+
+docker pull ghcr.io/kmu-fmcl/nerfstudio:latest
+```
+
+```bash
+# devel
+
+docker pull ghcr.io/kmu-fmcl/nerfstudio:nvcc
 ```
 
 or be built from the repository using
